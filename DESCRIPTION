@@ -1,13 +1,18 @@
 Package: jtr
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Miscellaneous functions
+Version: 0.0.0.9000
+Authors@R: person("Joyce", "Robbins", email="jtr13@columbia.edu", role = "cre")
+Description: This pacakge contains various functions generally related to workflow.
+License: GPL
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/jtr13/jtr
 BugReports: https://github.com/jtr13/jtr/issues
+Imports:
+    dplyr,
+    magrittr,
+    purrr,
+    stringr,
+    tibble,
+RoxygenNote: 7.0.2
