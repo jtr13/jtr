@@ -16,8 +16,8 @@ count_rmds <- function() {
   rmds_in_yml <- rmds_in_yml[grepl(".[Rr]md", rmds_in_yml)]
   cat("dupes in _bookdown.yml:\n")
   dupes <- rmds_in_yml[duplicated(rmds_in_yml)]
-  if (length(dupes) > 0) print(dupes) else message("None")
+  if (length(dupes) > 0) print(dupes) else cat("None\n")
   cat("Rmd files not in _bookdown.yml:\n")
   missing <- rmd_files[!(rmd_files %in% rmds_in_yml)]
-  if (length(missing) > 0) print(missing) else message("None")
+  if (length(missing) > 0) print(missing) else cat("None\n")
 }
