@@ -9,6 +9,7 @@
 count_rmds <- function() {
   rmd_files <- list.files()
   rmd_files <- rmd_files[grepl(".[Rr]md$", rmd_files)]
+  if(!file.exists("_bookdown.yml")) stop ("Can't find a _bookdown.yml file to analyze.")
 
   rmds_in_yml <- readLines("_bookdown.yml")
   rmds_in_yml <- rmds_in_yml  %>% stringr::str_remove_all("[',\\]]") %>%
