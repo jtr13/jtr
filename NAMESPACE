@@ -2,6 +2,7 @@
 
 export("%>%")
 export(add_title_comments)
+export(count_rmds)
 export(fixtitle)
 export(movepart)
 importFrom(magrittr,"%>%")
