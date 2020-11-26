@@ -1,3 +1,11 @@
+#' Check for duplicates in \code{_bookdown.yml} and any left out \code{Rmds}
+#' 
+#' @return duplicates in \code{_bookdown.yml} and any left out \code{Rmds}
+#' @examples
+#' count_rmds()
+
+@export
+
 count_rmds <- function() {
   rmd_files <- list.files()
   rmd_files <- rmd_files[grepl(".[Rr]md$", rmd_files)]
