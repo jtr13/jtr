@@ -15,7 +15,8 @@ count_rmds <- function() {
     stringr::str_trim()
   rmds_in_yml <- rmds_in_yml[grepl(".[Rr]md", rmds_in_yml)]
   cat("dupes in _bookdown.yml:\n")
-  print(rmds_in_yml[duplicated(rmds_in_yml)])
+  dupes <- rmds_in_yml[duplicated(rmds_in_yml)]
+  if (length(dupes) > 0)) print(dupes) else print("None")
   cat("Rmd files not in _bookdown.yml:\n")
   print(rmd_files[!(rmd_files %in% rmds_in_yml)])
 }
