@@ -6,7 +6,7 @@
 
 library(tidyverse)
 # may be skip = 3 instead
-df <- readxl::read_xls("~/Downloads/trevor.xls", skip = 2)
+# df <- readxl::read_xls("~/Downloads/trevor.xls", skip = 2) uncomment to run
 colnames(df)[1] <- "Time"
 gather(df, value = "Subject", key = "Start Date", -Time) %>%
   filter(!is.na(Subject)) %>%
