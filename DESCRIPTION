@@ -15,4 +15,4 @@ Imports:
     purrr,
     stringr,
     tibble,
-RoxygenNote: 7.1.1
+RoxygenNote: 7.3.2
