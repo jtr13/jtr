@@ -6,11 +6,13 @@
 \usage{
 record()
 }
+\value{
+No return value. Writes to a file as a side effect.
+}
 \description{
 Record what you're doing now to stay on track
 }
 \examples{
-
 \dontrun{
 record()
 }

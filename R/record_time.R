@@ -1,10 +1,9 @@
 #' Record what you're doing now to stay on track
 #'
-#' @returns
+#' @return No return value. Writes to a file as a side effect.
 #' @export
 #'
 #' @examples
-#'
 #' \dontrun{
 #' record()
 #' }
